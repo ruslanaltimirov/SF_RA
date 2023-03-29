@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.header_logo {
+    font-size: 30;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+}
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: white;
+    margin-right: 15px;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 10px;
+
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav_link:hover {
+    color: rgb(215, 212, 186);
+}
+/* Intro */
+
+.intro {
+    display: flex;
+    max-width: 1200px;
+    margin: 10px auto 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/TLEN8213.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 860px;
+}
+
+@media screen and (max-height: 820px) {
+    .intro {
+        height: fit-content;
+        background-size: 1200px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    } 
+    .container1 {
+        flex-wrap: wrap;
+    }
+    .about {
+        width: 100vw;
+    }
+}
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    min-height: 500px;
+    margin: 60px auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+    
+}
+.intro_title {
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: white;
+}
+.intro_button {
+    align-self: center;
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    transition: background-color 0.1s linear, color 0.1s linear;
+}
+.intro_button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Second Page */
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+.about {
+    align-self: center;
+    width: 50%;
+    text-align:justify;
+    padding: 0 50px;
+}
+
+.portrait {
+    width: 50%;
+    min-height: 20%;
+    background-image: url(../images/WTF09732.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 760px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portrait {
+        background-size: contain;    
+    }
+}
+
+/* Portfolio */
+
+.container2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    width: 100%;
+    text-align: center; 
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+.cont {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo_item {
+    width: calc(33.33% - 10px);
+    height:fit-content;
+    margin: 5px;
+}
+
+/* Make order */
+.red {
+    color: red;
+}
+
+.contact_form {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto 20px;
+    background-image: url(../images/fire.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.contact_wrapper {
+    width: 753px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 80px;
+}
+input {
+    width: 360px;
+    height: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    opacity: 25%;
+}
+.form_inputs {
+    display: flex;
+}
+textarea {
+    width: 100%;
+    height: 163px;
+    opacity: 25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+input, textarea {
+    border: 1px solid #bcbcbc;
+}
+input:first-of-type{
+    margin-right: 28px;
+}
+.button_block {
+    display: flex;
+    justify-content: flex-end;
+}
+input[type=submit] {
+    width: 165px;
+    height: 40px;
+    background: rgb(190, 120, 71, 0.7);
+    opacity: 100%;
+    color: beige;
+    margin-right: 0;
+}
+.order {
+    margin-left: 30px;
+    padding-top: 18px;
+    font-size: 34px;
+}
+
+/* Contacts */
+
+.container3 {
+    width: 1200px;
+    min-height: 650px;
+    margin: 0 auto;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    margin: 70px auto 20px;
+    border-radius: 50%;
+    background-color: aqua;
+    background-image: url(../images/hleborezka.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.social_links {
+    display: flex;
+    margin: 70px auto 0;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.contacts-1 {
+    margin-top: 70px;
+}
+.logos {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.inst {
+    background-image: url(https://www.logo.wine/a/logo/Instagram/Instagram-Glyph-Black-Logo.wine.svg);
+    background-size: cover;
+    background-position: center;
+}
+.vk {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/VK_Monochrome_Compact_Logo.svg/2048px-VK_Monochrome_Compact_Logo.svg.png);
+    background-size: contain;
+    background-position: center;
+}
+.telega {
+    background-image: url(https://cdn.iconscout.com/icon/free/png-128/telegram-1660431-1408699.png);
+    background-size: 120%;
+    background-position: center;
+}
+.links {
+    text-decoration:none;
+    color: rgba(65, 65, 234, 0.903);
+}
